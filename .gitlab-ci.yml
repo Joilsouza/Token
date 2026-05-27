@@ -1,0 +1,17 @@
+Run_test:
+	before_script:
+		- echo "before_script o job Run_test - Preparando os dados..."
+	script:
+		- echo "script do job Run_test"
+	after_script:
+		- echo "after_script o job Run_test - Limpando os dados..."
+
+build_image:
+	script:
+		- echo "script 1 do job build_image"
+		- echo "script 2 do job build_image"
+
+push_image:
+	script:
+		- echo "script 1 do job push_image"
+		- echo "script 2 do job push_image"
